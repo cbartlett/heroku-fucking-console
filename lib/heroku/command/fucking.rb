@@ -32,4 +32,10 @@ class Heroku::Command::Fucking < Heroku::Command::Run
   end
   alias_command 'rake', 'fucking:rake'
 
+  # fucking:dbconsole
+  #
+  # open a postgres console the same way you do locally
+  def dbconsole; end
+  alias_command 'dbconsole', 'pg:psql'
+
 end
